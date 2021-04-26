@@ -11,7 +11,19 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-   
+        <script>
+	    var swa = {
+		pubToken: '297bd107-a227-4338-aea2-cb090d4a2ede',
+		baseUrl: 'https://events-tracker.cfapps.sap.hana.ondemand.com/tracker/',
+		owner: null, 
+		//set this to a function that returns the identifier of the tracked user
+	    };
+	    (function(){
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/track.js';
+		s.parentNode.insertBefore(g,s);
+	     })();
+	</script>
      
 </head>
 <body>
