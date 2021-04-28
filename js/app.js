@@ -5,6 +5,7 @@ $(document).ready(function(){
     // generate console errors
     this.getErrors();
     null.firstname;
+    alert("Link is Clicked");
     
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
