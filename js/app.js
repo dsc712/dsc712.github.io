@@ -2,6 +2,7 @@ $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
+    console.warn("demo warning");
     // generate console errors
     this.getErrors();
     null.firstname;
