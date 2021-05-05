@@ -13,28 +13,38 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<!-- Matomo -->
 	<script type="text/javascript">
-	function a() {
-  		b();
-	}
-	function b() {
-	 console.trace("mytrace");
+	// function a() {
+  	// 	b();
+	// }
+	// function b() {
+	//  console.trace("mytrace");
 // 	 var stackTrace = new Error().stack;
 	//  console.log(stackTrace);
 // 	console.log(mytrace);
-	}
+	// }
 
-	
+	// errorObj = {};
+	// window.onerror = function(msg, url, lineNo, columnNo, error) {
+	// 	errorObj = {
+	// 		'msg': msg,
+	// 		'url': url,
+	// 		'lineNo': lineNo,
+	// 		'columnNo': columnNo,
+	// 		'Error object: ': JSON.stringify(error)
+	// 	};
+	// 	console.log("UPDATED SWA", errorObj);
+	// };
 
-	(function() {
-	    var exLog = console.trace;
-	    console.trace = function(msg, callback) {
-		exLog.apply(console, arguments);
-		console.log(exLog);
-		console.log("callback", callback);
-		alert(msg);
-	    }
-	})()
-	a();	
+	// (function() {
+	//     var exLog = console.trace;
+	//     console.trace = function(msg, callback) {
+	// 	exLog.apply(console, arguments);
+	// 	console.log(exLog);
+	// 	console.log("callback", callback);
+	// 	alert(msg);
+	//     }
+	// })()
+	// a();	
 		
 	  var _paq = window._paq = window._paq || [];
 	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
