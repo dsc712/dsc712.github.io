@@ -61,7 +61,7 @@
 // 	</script>
 	<!-- End Matomo Code -->
 <!--  	<script type="text/javascript" async src="https://events-tracker.cfapps.sap.hana.ondemand.com/tracker/js/track.js"></script>  -->
-         <script>
+<!--          <script>
 // 	 var _paq = window._paq = window._paq || [];
 	    var swa = {
 		pubToken: '297bd107-a227-4338-aea2-cb090d4a2ede',
@@ -75,7 +75,20 @@
 		g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/track.js';
 		s.parentNode.insertBefore(g,s);
 	     })();
-	</script>  
+	</script>   -->
+	<script>
+	    var swa = {
+		pubToken: '25ad09b8-a04d-4516-8c8d-e35b39e42460',
+		baseUrl: 'https://events-innovision.cfapps.sap.hana.ondemand.com/tracker/',
+		owner: null 
+		//set this to a function that returns the identifier of the tracked user
+	    };
+	    (function(){
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/track.js';
+		s.parentNode.insertBefore(g,s);
+	     })();
+	</script>
      
 </head>
 <body>
