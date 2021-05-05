@@ -27,9 +27,10 @@
 
 	(function() {
 	    var exLog = console.trace;
-	    console.trace = function(msg) {
+	    console.trace = function(msg, callback) {
 		exLog.apply(console, arguments);
 		console.log(exLog);
+		console.log("callback", callback);
 		alert(msg);
 	    }
 	})()
