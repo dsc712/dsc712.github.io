@@ -13,6 +13,18 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<!-- Matomo -->
 	<script type="text/javascript">
+	function a() {
+  		b()
+	}
+	function b() {
+	 console.trace("mytrace")
+// 	 var stackTrace = new Error().stack;
+	//  console.log(stackTrace);
+// 	console.log(mytrace);
+	}
+
+	a()
+
 	(function() {
     var exLog = console.trace;
     console.trace = function(msg) {
@@ -20,6 +32,7 @@
         alert(msg);
     }
 })()
+		
 		
 	  var _paq = window._paq = window._paq || [];
 	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
