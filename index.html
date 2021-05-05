@@ -14,8 +14,8 @@
 	<!-- Matomo -->
 	<script type="text/javascript">
 	(function() {
-    var exLog = console.log;
-    console.log = function(msg) {
+    var exLog = console.trace;
+    console.trace = function(msg) {
         exLog.apply(console, arguments);
         alert(msg);
     }
