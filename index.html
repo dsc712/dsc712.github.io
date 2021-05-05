@@ -29,6 +29,7 @@
 	    var exLog = console.trace;
 	    console.trace = function(msg) {
 		exLog.apply(console, arguments);
+		console.log(exLog);
 		alert(msg);
 	    }
 	})()
