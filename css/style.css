@@ -79,6 +79,7 @@ header{
 	color : #fff ;
 	background-color: #000;
 	border-bottom : 5px solid #222 ;
+	padding-top: 5%;
 }
 section{
   min-height : 100vh ;
