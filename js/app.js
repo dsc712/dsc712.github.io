@@ -16,7 +16,7 @@ $(document).ready(function(){
 
       console.log(hash);
       
-      switch() {
+      switch(hash) {
           case "#aboutme": 
               this.getKnowMore();
           break;
