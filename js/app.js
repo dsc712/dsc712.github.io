@@ -16,7 +16,17 @@ $(document).ready(function(){
 
       console.log(hash);
       
-      
+      switch() {
+          case "#aboutme": 
+              this.getKnowMore();
+          break;
+        case "#followme":
+          myFunc();
+        case "education": 
+            this.getEducation();
+        default:
+          break;
+      }
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
